@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta -->
-  <title>Have You Seen Mr Potato Head? — Missing from Belper, Derbyshire</title>
+  <title>Has Slater the Traitor Taken Our Tater? — Mr Potato Head Missing from Belper, Derbyshire</title>
   <meta name="description" content="Mr Potato Head has gone missing from Belper, Derbyshire. The two-metre statue gifted by twin town Pawtucket, Rhode Island is lost — help us find him, restore him, and bring him home. Has Slater the Traitor struck again?">
   <meta name="keywords" content="Mr Potato Head, Belper, Derbyshire, missing statue, Pawtucket, Hasbro, Samuel Slater, Slater the Traitor, De Bradelei, GoFundMe, community, restoration, twin town, industrial heritage, Derwent Valley Mills, UNESCO">
   <meta name="author" content="Mr Potato Head Belper Campaign">
@@ -18,7 +18,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mrpotatoheadbelper.com">
-  <meta property="og:title" content="Have You Seen Mr Potato Head? — Missing from Belper, Derbyshire">
+  <meta property="og:title" content="Has Slater the Traitor Taken Our Tater? — Mr Potato Head Missing from Belper">
   <meta property="og:description" content="Belper's beloved two-metre Mr Potato Head statue has gone missing. Help us find him, restore him, and give him the home he deserves. Has Slater the Traitor struck again?">
   <meta property="og:image" content="https://mrpotatoheadbelper.com/images/IMG_4264.JPG">
   <meta property="og:locale" content="en_GB">
@@ -26,7 +26,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Have You Seen Mr Potato Head? — Missing from Belper">
+  <meta name="twitter:title" content="Has Slater the Traitor Taken Our Tater? — Mr Potato Head Missing from Belper">
   <meta name="twitter:description" content="Belper's beloved two-metre spud has gone missing. Has Slater the Traitor returned to steal more from our great town?">
   <meta name="twitter:image" content="https://mrpotatoheadbelper.com/images/IMG_4264.JPG">
 
@@ -101,7 +101,7 @@
     }
 
     .container {
-      max-width: 740px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
@@ -165,12 +165,19 @@
       font-weight: 900;
       line-height: 1.1;
       color: var(--ink);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
     .hero h1 em {
       font-style: italic;
       color: var(--rust);
+    }
+
+    .hero-secondary {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+      color: var(--ink-light);
+      margin-bottom: 0.5rem;
     }
 
     .hero-spud {
@@ -650,16 +657,6 @@
       font-size: 0.9rem;
     }
 
-    /* ============ RESPONSIVE ============ */
-    @media (max-width: 640px) {
-      .mission-grid { grid-template-columns: 1fr; gap: 0; }
-      .towns-row { grid-template-columns: 1fr; text-align: center; }
-      .towns-arrow { transform: rotate(90deg); }
-      .nav-links { gap: 0.8rem; }
-      nav a { font-size: 0.7rem; }
-      .timeline-item { grid-template-columns: 55px 1fr; }
-    }
-
     /* ============ IMAGES ============ */
     .hero-image {
       margin: 2.5rem -2rem 0;
@@ -755,6 +752,31 @@
     @media (max-width: 640px) {
       .image-grid { grid-template-columns: 1fr; }
       .image-grid img { height: 200px; }
+      .mission-grid { grid-template-columns: 1fr; gap: 0; }
+      .towns-row { grid-template-columns: 1fr; text-align: center; }
+      .towns-arrow { transform: rotate(90deg); }
+
+      nav .container {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav .nav-brand {
+        font-size: 0.85rem;
+      }
+
+      .nav-links {
+        gap: 0.6rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+      }
+
+      .timeline-item { grid-template-columns: 55px 1fr; }
     }
 
     /* ============ SCROLL ANIMATIONS ============ */
@@ -789,7 +811,8 @@
   <section class="hero">
     <div class="container">
       <p class="hero-eyebrow">Belper, Derbyshire — An Appeal</p>
-      <h1>Have You Seen<br><em>Mr Potato Head?</em></h1>
+      <h1>Has Slater the Traitor<br><em>Taken Our Tater?</em></h1>
+      <p class="hero-secondary">Have You Seen Mr Potato Head?</p>
       <span class="hero-spud">🥔</span>
       <p class="hero-lead">
         Belper's beloved two-metre spud has gone missing — has Slater the Traitor returned to steal more from our great town? We need your help to find him, restore him, and give him the home he deserves.
